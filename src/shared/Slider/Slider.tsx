@@ -21,7 +21,7 @@ export function Slider() {
             className={s.slider}
             loop grabCursor
             modules={[Navigation, Pagination, Autoplay, EffectCoverflow]} 
-            // pagination={{clickable: true}}
+            pagination={{clickable: true}}
             navigation={{prevEl: navigationPrevRef.current, nextEl: navigationNextRef.current}}
             autoplay={{delay: 2500, disableOnInteraction: false}}
             slidesPerView={1}

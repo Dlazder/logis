@@ -1,4 +1,14 @@
 .slider {
+    // rewriting styles for pagination bullets
+    :global(.swiper-pagination-bullet) {
+        background: red;
+        transition: .3s;
+    }
+    :global(.swiper-pagination-bullet-active) {
+        transform: scale(1.2);
+    }
+
+
     height: 600px;
     .slide {
         img {
