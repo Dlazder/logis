@@ -49,7 +49,6 @@ function App() {
       </div>
       
     </header>
-    <body>
     <Slider/>
 
     <div className="site-section" id="section-about">
@@ -204,7 +203,6 @@ function App() {
         </div>
       </div>
     </div>
-    </body>
     </>
   )
 }
