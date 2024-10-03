@@ -1,7 +1,5 @@
-import carWashingImage from '../images/car-washing.jpg'
 import carWashingImage4 from '../images/car-washing-4.jpg'
-import carWashingImage2 from '../images/car-washing-2.avif'
-import carWashingImage3 from '../images/car-washing-3.avif'
+import { Slider } from './shared/Slider/Slider'
 function App() {
 
   return (
@@ -52,28 +50,7 @@ function App() {
       
     </header>
     <body>
-    <div className="slideshow">
-      
-      <div className="welcome">Добро пожаловать!</div>
-      <div className="slide">
-        <img src={carWashingImage} alt="Slide 1"/>
-      </div>
-      <div className="slide">
-        <img src={carWashingImage2} alt="Slide 2"/>
-      </div>
-      <div className="slide">
-        <img src={carWashingImage3} alt="Slide 3"/>
-      </div>
-      <div className="nav-buttons">
-        <button className="prev-btn">&lt;</button>
-        <button className="next-btn">&gt;</button>
-      </div>
-      <div className="dots">
-        <span className="dot active"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
-      </div>
-    </div>
+    <Slider/>
 
     <div className="site-section" id="section-about">
       <div className="container">

@@ -1607,19 +1607,6 @@ body {
     box-sizing: border-box;
   }
   
-  
-  .welcome {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
-    color: #f9f6f6;
-    text-align: center;
-    z-index: 1000;
-    padding: 20px;
-  }
-  
   .prev-btn {
     position: absolute;
     top: 50%;
