@@ -5,4 +5,6 @@ import { viteStaticCopy } from 'vite-plugin-static-copy'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), VitePWA(), viteStaticCopy({targets: [{src: 'js/', dest: './'}, {src: 'css/', dest: './'}]})],
+  build: {outDir: './docs', emptyOutDir: true},
+  base: ''
 })
