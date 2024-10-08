@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules'
 import { Swiper as SwiperType } from 'swiper'
-import carWashingImage from '../../../images/car-washing.jpg'
-import carWashingImage2 from '../../../images/car-washing-2.avif'
-import carWashingImage3 from '../../../images/car-washing-3.avif'
+import carWashingImage1 from '/car-washing-1.jpg'
+import carWashingImage2 from '/car-washing-2.avif'
+import carWashingImage3 from '/car-washing-3.avif'
 
 import s from './Slider.module.scss'
 import 'swiper/css'
@@ -37,7 +37,7 @@ export function Slider() {
             effect={'coverflow'}
             onBeforeInit={(swiper) => {swiperRef.current = swiper}}
         >
-            <SwiperSlide className={s.slide}><img src={carWashingImage} alt="Slide 1"/></SwiperSlide>
+            <SwiperSlide className={s.slide}><img src={carWashingImage1} alt="Slide 1"/></SwiperSlide>
             <SwiperSlide className={s.slide}><img src={carWashingImage2} alt="Slide 2"/></SwiperSlide>
             <SwiperSlide className={s.slide}><img src={carWashingImage3} alt="Slide 3"/></SwiperSlide>
             <div className={s.welcome}>Добро пожаловать!</div>

@@ -1,4 +1,4 @@
-import carWashingImage4 from '../images/car-washing-4.jpg'
+import carWashingImage4 from '/car-washing-4.jpg'
 import { Slider } from './shared/Slider/Slider'
 import { Header } from './widgets/Header/Header'
 function App() {
@@ -33,7 +33,7 @@ function App() {
       </div>
     </div>
   
-    <div className="site-section bg-image overlay" /*style={{backgroundImage: "url('images/car-washing.jpg')"}}*/ id="section-how-it-works">
+    <div className="site-section bg-image overlay" style={{backgroundImage: 'url(./images/car-washing-1.jpg)'}} id="section-how-it-works">
       <div className="container">
         <div className="row justify-content-center mb-5">
           <div className="col-md-7 text-center border-primary">
@@ -87,8 +87,7 @@ function App() {
       </div>
     </div>
 
-
-    <div className="site-section bg-image overlay" /*style="background-image: url('images/auto.avif');"*/ id="section-how-it-works">
+    <div className="site-section bg-image overlay" style={{backgroundImage: 'url(./images/car-washing-5.avif)'}} id="section-how-it-works">
       <div className="container">
         <div className="row justify-content-center mb-5">
           <div className="col-md-7 text-center border-primary">
@@ -127,6 +126,7 @@ function App() {
         </div>
       </div>
     </div>
+
     <div className="site-section bg-light" id="section-contact">
       <div className="container">
         <div className="row justify-content-center mb-5">
