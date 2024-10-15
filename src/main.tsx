@@ -6,7 +6,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-const router = createRouter({routeTree})
+const router = createRouter({routeTree, basepath: '/logis/'})
 declare module '@tanstack/react-router' {
   interface Register {
     router: typeof router
