@@ -1,0 +1,1 @@
+import{c as o,j as t,S as s}from"./index-D8deCDzB.js";const e={},c=o("/catalog")({component:r});function r(){return t.jsxs(t.Fragment,{children:[t.jsx(s,{}),t.jsx("div",{className:e.product})]})}export{c as Route};

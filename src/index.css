@@ -283,7 +283,9 @@ body {
       .site-navbar .site-logo a {
         color: #fff; }
     .site-navbar .site-menu-toggle {
-      color: #fff; }
+      color: #fff;
+      cursor: pointer;
+    }
     .site-navbar .site-navigation.border-bottom {
       border-bottom: 1px solid #f3f3f4 !important; }
     .site-navbar .site-navigation .site-menu {
@@ -437,13 +439,8 @@ body {
     padding-top: 20px;
     background: #fff;
     height: calc(100vh);
-    -webkit-transform: translateX(110%);
-    -ms-transform: translateX(110%);
     transform: translateX(110%);
-    -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
     box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
-    -webkit-transition: .3s all ease-in-out;
-    -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out; }
     .offcanvas-menu .site-mobile-menu {
       -webkit-transform: translateX(0%);

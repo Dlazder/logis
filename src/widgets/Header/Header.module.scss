@@ -1,0 +1,112 @@
+.header {
+    width: 100%;
+
+    a {
+        text-transform: uppercase;
+        color: white;
+    }
+    .wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+
+        transition: .2s;
+        &.open {
+            transform: translateX(0) !important;
+        }
+    }
+
+    //class .scrolled added from jQuery, which not using css modules. class names will not match
+    &:global(.scrolled) {
+        .burgerButton .bar {
+            background: black;
+        }
+        a {
+            color: black;
+        }
+    }
+
+    
+
+    .burgerButton {
+        outline: none;
+        z-index: 1;
+        display: none;
+        width: 40px;
+        height: 15px;
+        margin: 25px;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        position: relative;
+        
+
+        .bar {
+            display: block;
+            position: absolute;
+            background: white;
+            width: 20px;
+            height: 3px;
+            transition: .2s linear;
+
+            &:nth-child(1) {
+                top: 0px;
+            }
+            &:nth-child(2) {
+                top: 6px;
+            }
+            &:nth-child(3) {
+                bottom: 0px;
+            }
+        }
+
+        &.burgerButtonOpen {
+            .bar {
+                background: black;
+                &:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(1) {
+                    opacity: 0;
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg) translate(-4px, -4px);
+                }
+            }
+        }
+  
+    }
+
+    @media (max-width: 1200px) {
+        nav {
+            padding: 100px 20px;
+            background: white;
+            top: 0;
+            right: 0;
+            position: fixed;
+            height: 100vh;
+            transform: translateX(100%);
+
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+
+            a {
+                color: black;
+            }
+        }
+        .burgerButton {
+            display: block;
+        }
+    }
+}
+
+
