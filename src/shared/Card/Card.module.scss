@@ -1,0 +1,55 @@
+.wrapper {
+    padding: 0 15px;
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.card {
+    width: fit-content;
+    position: relative;
+    padding-top: 15px;
+    box-shadow: 0px 5px 2px -1px rgb(255, 233, 233);
+
+
+    img {
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+    }
+    .pricePrimary {
+        color: #ee3231;
+    }
+
+    .cardImg {
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+            img {
+                transform: scale(1.06) rotate(1deg);
+            }
+        }
+    }
+
+
+    .cardContent {
+        position: absolute;
+        bottom: 35px;
+        left: 30px;
+
+
+        .title {
+            font-weight: 700;
+            color: #383838;
+
+            &:hover {
+                color: #ee3231;
+            }
+        }
+
+        .price {
+            font-size: 14px;
+        }
+    }
+
+
+}
