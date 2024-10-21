@@ -24,11 +24,11 @@ export function Header() {
                     </div>
                     
                     <nav className={`${isOpen ? s.open : ''}`} role="navigation">
-                        <Link to="/" className="nav-link">Главное</Link>
-                        <a href="#section-about" className="nav-link">О нас</a>
-                        <a href="#section-how-it-works" className="nav-link">Как мы работаем</a>                                    
-                        <Link to="/catalog" className="nav-link">Магазин</Link>
-                        <a href="#section-contact" className="nav-link">Контакты</a>
+                        <Link to='/' className='nav-link'>Главное</Link>
+                        <a href='#section-about' className='nav-link'>О нас</a>
+                        <a href='#section-how-it-works' className='nav-link'>Как мы работаем</a>                                    
+                        <Link to='/products' className='nav-link'>Магазин</Link>
+                        <a href='#section-contact' className='nav-link'>Контакты</a>
                     </nav>
 
 
