@@ -6,16 +6,9 @@ export function Header() {
     
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () => setIsOpen((prev) => !prev)
+    const close = () => setIsOpen(false)
     return (
         <>
-            {/* <div className="site-mobile-menu site-navbar-target">
-                <div className="site-mobile-menu-header">
-                    <div className="site-mobile-menu-close mt-3">
-                    <span className="icon-close2 js-menu-toggle"></span>
-                    </div>
-                </div>
-                <div className="site-mobile-menu-body"></div>
-            </div> */}
             <header className={`${s.header} site-navbar js-site-navbar site-navbar-target`} role="banner" id="site-navbar">
                 <div className={`${s.wrapper} container`}>
 
@@ -24,11 +17,11 @@ export function Header() {
                     </div>
                     
                     <nav className={`${isOpen ? s.open : ''}`} role="navigation">
-                        <Link to="/" className="nav-link">Главное</Link>
-                        <a href="#section-about" className="nav-link">О нас</a>
-                        <a href="#section-how-it-works" className="nav-link">Как мы работаем</a>                                    
-                        <Link to="/catalog" className="nav-link">Магазин</Link>
-                        <a href="#section-contact" className="nav-link">Контакты</a>
+                        <Link onClick={close} to="/" className="nav-link">Главное</Link>
+                        <a onClick={close} href="#section-about" className="nav-link">О нас</a>
+                        <a onClick={close} href="#section-how-it-works" className="nav-link">Как мы работаем</a>                                    
+                        <Link onClick={close} to="/catalog" className="nav-link">Магазин</Link>
+                        <a onClick={close} href="#section-contact" className="nav-link">Контакты</a>
                     </nav>
 
 
