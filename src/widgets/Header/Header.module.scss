@@ -23,7 +23,7 @@
         }
     }
 
-    //class .scrolled added from jQuery, which not using css modules. class names will not match
+    //class .scrolled added from jQuery, which not using css modules.
     &:global(.scrolled) {
         .burgerButton .bar {
             background: black;
