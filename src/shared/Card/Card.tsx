@@ -5,7 +5,7 @@ interface CardProps {
     id: number;
     title: string;
     price: number;
-    imgSrc: string;
+    imgSrcs: string[];
 }
 
 export function Card(props: {data: CardProps}) {
@@ -21,7 +21,7 @@ export function Card(props: {data: CardProps}) {
 
                 <div className={s.cardImg}>
                     <Link to={productLink} params={params}>
-                        <img src={data.imgSrc} alt='product-image'/>
+                        <img src={data.imgSrcs[0]} alt='product-image'/>
                     </Link>
                 </div>
 
