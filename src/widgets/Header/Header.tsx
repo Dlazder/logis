@@ -1,15 +1,22 @@
-import { Link } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import s from './Header.module.scss'
 import { useState } from "react";
 
-export function Header() {
-    
+
+//prop "black" set links color in nav to black  
+
+export function Header({black = false}: {black?: boolean}) {
+
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () => setIsOpen((prev) => !prev)
     const close = () => setIsOpen(false)
+
+
+    const location = useLocation()
+
     return (
         <>
-            <header className={`${s.header} site-navbar js-site-navbar site-navbar-target`} role="banner" id="site-navbar">
+            <header className={`${s.header} ${black ? s.black : ''} ${location.pathname.match(/logis\/products\/.+/) ? s.black : ''} site-navbar js-site-navbar site-navbar-target`} role="banner" id="site-navbar">
                 <div className={`${s.wrapper} container`}>
 
                     <div className="site-logo py-3">

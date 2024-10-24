@@ -1,9 +1,23 @@
-[{"id": 1, "title": "Auto Clutch & Brake", "price": 12000, "imgSrcs": ["https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-1-290x350.jpg"]}, {
+[
+    {
+    "id": 1, 
+    "title": "Auto Clutch & Brake", 
+    "price": 12000, 
+    "imgSrcs": [
+        "https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-1-290x350.jpg",
+        "https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-1-290x350.jpg",
+        "https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-1-290x350.jpg"
+    ]
+    },
+    {
     "id": 2,
     "title": "Auto Clutch & Brake",
     "price": 13000,
     "imgSrcs": [
-     "https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-2-290x350.jpg"
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-2-290x350.jpg",
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/large-size/2-2-618x578.jpg",
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/large-size/2-6-618x578.jpg",
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/large-size/2-5-618x578.jpg"
     ]
    },
    {
@@ -11,7 +25,10 @@
     "title": "Auto Clutch & Brake",
     "price": 15000,
     "imgSrcs": [
-     "https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-3-290x350.jpg"
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/medium-size/shop/1-3-290x350.jpg",
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/large-size/2-2-618x578.jpg",
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/large-size/2-2-618x578.jpg",
+     "https://template.hasthemes.com/tromic/tromic/assets/images/product/large-size/2-2-618x578.jpg"
     ]
    },
    {
